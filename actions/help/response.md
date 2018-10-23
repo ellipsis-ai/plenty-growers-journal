@@ -1,0 +1,1 @@
+Type `@{successResult} growers journal report` to begin a new report.

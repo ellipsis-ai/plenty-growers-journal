@@ -1,0 +1,12 @@
+{
+  "exportId" : "teFEp86RSt-2MHEcnfX0kA",
+  "name" : "Location",
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : true,
+  "isTest" : false,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

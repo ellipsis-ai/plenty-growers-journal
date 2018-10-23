@@ -1,0 +1,12 @@
+{
+  "exportId" : "3pz1El3_QVWEcvDokN0tag",
+  "name" : "FarmIssue",
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : true,
+  "isTest" : false,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

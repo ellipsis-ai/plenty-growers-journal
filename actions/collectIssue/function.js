@@ -2,18 +2,17 @@ function(reportData, issue, ellipsis) {
   const Report = require("Report");
 const report = Report.fromString(reportData);
 const isOtherIssue = issue.label === Report.OTHER_FARM_ISSUE;
-let result = "";
-if (!isOtherIssue) {
+if (isOtherIssue) {
+  ellipsis.success("", {
+    next: {
+      actionName: "reportOtherIssue",
+      args: report.toArgs()
+    }
+  });
+} else {
   report.issues = report.issues.concat(issue.label);
-  result = `Here is your report so far:
-
-${report.format()}
-`;
+  ellipsis.success(report.draftResult(), {
+    choices: report.draftChoices()
+  });
 }
-ellipsis.success(result, {
-  next: {
-    actionName: isOtherIssue ? "reportOtherIssue" : "askMoreIssues",
-    args: report.toArgs()
-  }
-});
 }

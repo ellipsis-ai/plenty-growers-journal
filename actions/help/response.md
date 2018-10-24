@@ -1,1 +1,1 @@
-Type `@{successResult} growers journal report` to begin a new report.
+Type `@{ellipsis.teamInfo.botName} growers journal report` to begin a new report.

@@ -9,16 +9,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "0zKTJ4WJRGmbazGeuUE0HA",
-  "name" : "issues",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "List the issues you are seeing",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "5EvTzSaeRXe__XBI-5xCHA",
   "name" : "location",
   "paramType" : {
@@ -39,43 +29,23 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "Lfu7AICTRDGhaVH-3h7-1Q",
-  "name" : "journal",
+  "exportId" : "Ogj0ZccSTnC9SrCmEjE5Ww",
+  "name" : "channel",
   "paramType" : {
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What are you seeing in the farm?",
+  "question" : "What channel would you like to have the reports shown in?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "MckPou9RT4iDkWGX5Ftukw",
-  "name" : "reportData",
+  "exportId" : "Z0rGRlqXQx6htnRMxRtMUw",
+  "name" : "recurrence",
   "paramType" : {
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What is the value for `reportData`?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "PA2QtKzySeS1PVn8LLSzDQ",
-  "name" : "moreIssues",
-  "paramType" : {
-    "exportId" : "Yes/No",
-    "name" : "Yes/No"
-  },
-  "question" : "Are there any other issues?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "VkvMSO-QQ1ud8npq8hEuug",
-  "name" : "moreIssues",
-  "paramType" : {
-    "exportId" : "Yes/No",
-    "name" : "Yes/No"
-  },
-  "question" : "Are there any other issues to report?",
+  "question" : "When should I announce the reports? (e.g. \"every weekday at 8:30am\")",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {

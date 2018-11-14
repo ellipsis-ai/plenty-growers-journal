@@ -1,5 +1,5 @@
 [ {
-  "text" : "growers journal report",
+  "text" : "today's growers reports",
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false,

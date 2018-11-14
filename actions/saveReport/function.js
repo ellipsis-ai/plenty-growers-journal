@@ -7,8 +7,8 @@ const moment = require('moment-timezone');
 const Report = require("Report");
 const report = Report.fromString(reportData);
 const now = moment.tz(ellipsis.teamInfo.timeZone);
-report.date = now.format("M/D/YYYY");
-report.time = now.format("h:mm:ss a");
+report.date = now.format(Report.DATE_FORMAT);
+report.time = now.format(Report.TIME_FORMAT);
 const SAVE_ERROR_MESSAGE = `An error occurred while trying to save your report. Please notify <@${ellipsis.env.GROWERS_REPORT_MANAGER_USER_ID}>.`;
 
 client.authorize().then(() => {

@@ -36,24 +36,29 @@ client.authorize().then(() => {
     });
     const reports = inRange.map((ea) => ea.format({ withTime: true })).join("\n\n---\n\n");
     let result;
-    if (inRange.length === 0) {
-      result = "There are no grower’s journal reports so far today.";
+    if (inRange.length > 1) {
+      result = `There are ${inRange.length} grower’s journal reports today:
+
+---
+
+${reports}`;
     } else if (inRange.length === 1) {
       result = `Here is today’s grower’s journal report:
 
 ---
 
 ${reports}`;
-    } else {
-      result = `There are ${inRange.length} grower’s journal reports today:
-
----
-
-${reports}`;
+    } else if (ellipsis.event.originalEventType !== "scheduled") {
+      result = "There are no grower’s journal reports so far today.";
     }
-    ellipsis.success(`${greeting}
+    
+    if (result) {
+      ellipsis.success(`${greeting}
 
-${result}`);
+  ${result}`);
+    } else {
+      ellipsis.noResponse();
+    }
   }
 });
 }

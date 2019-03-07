@@ -3,6 +3,7 @@ function(ellipsis) {
   "MTR",
   "MGLD",
   "SEED",
-  "KIT"
+  "KIT",
+  "Tigris"
 ]);
 }

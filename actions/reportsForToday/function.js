@@ -1,7 +1,7 @@
 function(ellipsis) {
   const greeting = require('ellipsis-random-response').greetingForTimeZone(ellipsis.teamInfo.timeZone);
 const client = require('google-client')(ellipsis);
-const {google} = require('googleapis');
+const {google} = ellipsis.require('googleapis@36.0.0');
 const sheets = google.sheets('v4');
 const moment = require('moment-timezone');
 const Report = require("Report");

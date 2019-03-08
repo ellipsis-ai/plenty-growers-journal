@@ -1,6 +1,6 @@
 function(reportData, ellipsis) {
   const client = require('google-client')(ellipsis);
-const {google} = require('googleapis');
+const {google} = ellipsis.require('googleapis@36.0.0');
 const sheets = google.sheets('v4');
 const moment = require('moment-timezone');
 
